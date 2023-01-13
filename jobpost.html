@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Post a Job</h1>
+    </header>
+
+    <nav>
+      <div class="nav-right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="jobpost.html">Post</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="job-post">
+        <form action="insert.php" method="POST">
+            <input type="text" id="job-title" name="job-title" placeholder="Job Title">
+            <input type="number" id="salary" name="salary" placeholder="Expected Salary e.g $52,000">
+            <input type="number" id="hourly" name="hourly" placeholder="Expected Hourly Rate e.g $25">
+            <input type="number" id="hours" name="hours" placeholder="Expected hours per week E.g 38/wk">
+            <input type="text" id="short-description" name="short-description" placeholder="Short job Description, viewed on simplified job post.">
+            <input type="text" id="long-description" name="long-description" placeholder="Long job Description, viewed when viewing the entire job post.">
+
+            <select id="job-type" name="job-type" required>
+                <option value="" disabled selected>Job Type</option>
+                <option value="part-time">Part Time</option>
+                <option value="full-time">Full Time</option>
+                <option value="contract">Contract</option>
+                <option value="temporary">Temporary</option>
+            </select>
+          <button type="submit">Post Job</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Copyright © 2023 Next Up</p>
+    </footer>
+  </body>
+</html>
