@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <div class="site-title">
+        <title>Next Step</title>
+    </div>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Next Step</h1>
+    </header>
+
+    <nav>
+        <div class="nav-left">
+            <button id="add-job-button">Add Job</button>
+            <button id="remove-job-button">Remove Job</button>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobpost.html">Post</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-content">
+
+            <div class="leftpane">
+                <div class="job-search">
+                    <form>
+                        <input type="text" id="job-title" name="job-title" placeholder="Job Title">
+                        <input type="number" id="salary" name="salary" placeholder="Expected Salary e.g $52,000">
+                        <select id="job-type" name="job-type" required>
+                            <option value="" disabled selected>Job Type</option>
+                            <option value="part-time">Part Time</option>
+                            <option value="full-time">Full Time</option>
+                            <option value="contract">Contract</option>
+                            <option value="temporary">Temporary</option>
+                        </select>
+                      <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="rightpane">
+                <section class="job-listings">
+                    <script src="scripts.js"></script>
+                    <div class="pagination">
+                        <button class="previous-page-button">Previous Page</button>
+                        <button class="next-page-button">Next Page</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Copyright © 2023 Next Step</p>
+    </footer>
+  </body>
+</html>

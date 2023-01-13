@@ -1,0 +1,247 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url('images/main-background-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 243, 243);
+
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-right {
+    display: flex;
+}
+
+#add-job-button, #remove-job-button {
+    margin-right: 10px;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1em;
+    position: right;
+}
+
+
+/* Left column */
+.main-content {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.job-listings-container {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Job Listing Styles */
+.job-listings {
+    width: 100%;
+    padding: 1em;
+    flex: 1;
+    overflow-y: hidden;
+}
+
+.job-listing {
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 243, 243);
+    margin-bottom: 1em;
+    padding: 1em;
+    overflow: auto;
+    max-height:calc(100vh - 130px);
+
+
+}
+
+.job-listing-info {
+    width: 15%;
+    float: right;
+    text-align:center;
+}
+
+.job-title {
+    width: 15%;
+    text-align:center;
+    margin-bottom: 1em;
+}
+
+.job-description {
+    width: 60%;
+    margin-bottom: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.job-listings h2 {
+    margin: 0;
+}
+
+
+.job-listing h3 {
+    margin: 0;
+}
+
+.job-listing p {
+    margin: 0;
+}
+
+
+/* Apply Button Styles */
+
+.job-listing-actions {
+    display: flex;
+    width: 12%;
+    top: 1.5;
+}
+
+.job-listing-apply-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.job-listing-content-button {
+    background-color: blue;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin-left: 0.5em;
+    /* additional button styles here */
+}
+
+
+/* Job search */
+.job-search {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 500px;
+    position: sticky;
+    top: 0;
+    left: 0;
+   /*  box-shadow: 0 0 20px rgba(0,0,0,0.5); blur */
+
+}
+
+
+label {
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 1em 2em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    width: 25%;
+}
+
+/* left middle and right panes */
+.leftpane {
+    width: 25%;
+    min-width: 350px;
+    max-width: 550px;
+    height: available;
+    min-height: 400px;
+    float: left;
+    border-collapse: collapse;
+}   
+
+.rightpane{
+    width: 75%;
+    min-width: 350px;
+    height: available;
+    min-height: 400px;
+    float: right;
+
+}
+
+.pagination {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+.job-post {
+    width: 100%;
+    padding: 100px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6e6262;
+    padding: 1em;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
